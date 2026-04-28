@@ -44,3 +44,9 @@ MultipleActiveResultSets=False;
 Encrypt=true;
 TrustServerCertificate=False;
 Connection Timeout=30;
+
+## Delete SQL database server
+az sql server delete \
+  --name chan-dev-sql-server-12345 \
+  --resource-group kml_rg_main-d77e6a74799c48ae \
+  --yes
