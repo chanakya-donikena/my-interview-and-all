@@ -50,3 +50,10 @@ az sql server delete \
   --name chan-dev-sql-server-12345 \
   --resource-group kml_rg_main-d77e6a74799c48ae \
   --yes
+
+## If you want to delete only the DB instead of DB server
+az sql db delete \
+  --resource-group kml_rg_main-d77e6a74799c48ae \
+  --server chan-dev-sql-server-12345 \
+  --name chan-dev-database \
+  --yes
